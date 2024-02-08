@@ -157,7 +157,7 @@ const Home = () => {
         </section>
       </div>
 
-      <section className="grid gap-16 px-8 py-16 lg:grid-cols-3">
+      <section className="grid gap-16 px-8 py-16 lg:grid-cols-3 lg:py-32">
         <div className="mx-auto flex max-w-lg flex-col items-center space-y-6 bg-white">
           <Image
             src="/assets/images/responsive.png"
