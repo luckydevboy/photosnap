@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <main>
       <section className="md:flex md:h-[600px]">
-        <div className="relative order-2 h-96 md:h-auto md:w-1/3">
+        <div className="relative order-2 h-96 md:h-auto md:w-1/3 lg:w-3/5">
           <Image
             src="/assets/images/pexels-wouter-de-jong-571169.jpg"
             alt="Photographer with sea landscape"
@@ -14,7 +14,7 @@ const Home = () => {
             objectFit="cover"
           />
         </div>
-        <div className="space-y-6 bg-black px-8 py-16 md:flex md:w-2/3 md:flex-col md:justify-center">
+        <div className="space-y-6 bg-black px-8 py-16 md:flex md:w-2/3 md:flex-col md:justify-center lg:w-2/5">
           <h1 className="text-3xl font-bold text-white md:text-5xl">
             CREATE AND SHARE YOUR PHOTO STORIES.
           </h1>
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
       </section>
       <section className="md:flex md:h-[600px]">
-        <div className="relative h-96 md:h-auto md:w-1/3">
+        <div className="relative h-96 md:h-auto md:w-1/3 lg:w-3/5">
           <Image
             src="/assets/images/pexels-caio-56759.jpg"
             alt="Office Desk"
@@ -37,7 +37,7 @@ const Home = () => {
             objectFit="cover"
           />
         </div>
-        <div className="space-y-6 bg-white px-8 py-16 md:flex md:w-2/3 md:flex-col md:justify-center">
+        <div className="space-y-6 bg-white px-8 py-16 md:flex md:w-2/3 md:flex-col md:justify-center lg:w-2/5">
           <h1 className="text-3xl font-bold text-black md:text-5xl">
             BEAUTIFUL STORIES EVERY TIME
           </h1>
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
       </section>
       <section className="md:flex md:h-[600px]">
-        <div className="relative order-2 h-96 md:h-auto md:w-1/3">
+        <div className="relative order-2 h-96 md:h-auto md:w-1/3 lg:w-3/5">
           <Image
             src="/assets/images/pexels-kyle-loftus-3379933.jpg"
             alt="Photographer"
@@ -59,7 +59,7 @@ const Home = () => {
             objectFit="cover"
           />
         </div>
-        <div className="space-y-6 bg-white px-8 py-16 md:flex md:w-2/3 md:flex-col md:justify-center">
+        <div className="space-y-6 bg-white px-8 py-16 md:flex md:w-2/3 md:flex-col md:justify-center lg:w-2/5">
           <h1 className="text-3xl font-bold text-black">
             DESIGNED FOR EVERYONE
           </h1>
@@ -74,7 +74,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="md:grid md:grid-cols-2">
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-4">
         <section className="relative">
           <div className="absolute z-10 h-96 w-full bg-black/40"></div>
           <div className="relative h-96">
@@ -157,44 +157,48 @@ const Home = () => {
         </section>
       </div>
 
-      <section className="mx-auto flex max-w-lg flex-col items-center space-y-6 bg-white px-8 py-16">
-        <Image
-          src="/assets/images/responsive.png"
-          alt="Responsive"
-          width={80}
-          height={80}
-        />
-        <h1 className="text-xl font-bold text-black">100% Responsive</h1>
-        <p className="text-center text-base text-zinc-700">
-          No matter which the device you&apos;re on, our site is fully
-          responsive and stories look beautiful on any screen.
-        </p>
-      </section>
-      <section className="mx-auto flex max-w-lg flex-col items-center space-y-6 bg-white px-8 pb-16">
-        <Image
-          src="/assets/images/infinity.png"
-          alt="Responsive"
-          width={80}
-          height={80}
-        />
-        <h1 className="text-xl font-bold text-black">No Photo Upload Limit</h1>
-        <p className="text-center text-base text-zinc-700">
-          Our tool has no limits on uploads or bandwidth. Freely upload in bulk
-          and share all of your stories in one go.
-        </p>
-      </section>
-      <section className="mx-auto flex max-w-lg flex-col items-center space-y-6 bg-white px-8 pb-16">
-        <Image
-          src="/assets/images/bullhorn.png"
-          alt="Responsive"
-          width={80}
-          height={80}
-        />
-        <h1 className="text-xl font-bold text-black">Available to Embed</h1>
-        <p className="text-center text-base text-zinc-700">
-          Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
-          videos, Google Maps, and more.
-        </p>
+      <section className="grid gap-16 px-8 py-16 lg:grid-cols-3">
+        <div className="mx-auto flex max-w-lg flex-col items-center space-y-6 bg-white">
+          <Image
+            src="/assets/images/responsive.png"
+            alt="Responsive"
+            width={80}
+            height={80}
+          />
+          <h1 className="text-xl font-bold text-black">100% Responsive</h1>
+          <p className="text-center text-base text-zinc-700">
+            No matter which the device you&apos;re on, our site is fully
+            responsive and stories look beautiful on any screen.
+          </p>
+        </div>
+        <div className="mx-auto flex max-w-lg flex-col items-center space-y-6 bg-white">
+          <Image
+            src="/assets/images/infinity.png"
+            alt="Responsive"
+            width={80}
+            height={80}
+          />
+          <h1 className="text-xl font-bold text-black">
+            No Photo Upload Limit
+          </h1>
+          <p className="text-center text-base text-zinc-700">
+            Our tool has no limits on uploads or bandwidth. Freely upload in
+            bulk and share all of your stories in one go.
+          </p>
+        </div>
+        <div className="mx-auto flex max-w-lg flex-col items-center space-y-6 bg-white">
+          <Image
+            src="/assets/images/bullhorn.png"
+            alt="Responsive"
+            width={80}
+            height={80}
+          />
+          <h1 className="text-xl font-bold text-black">Available to Embed</h1>
+          <p className="text-center text-base text-zinc-700">
+            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+            videos, Google Maps, and more.
+          </p>
+        </div>
       </section>
     </main>
   );
