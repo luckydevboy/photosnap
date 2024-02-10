@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="twitter:image"
-          content="https://metatags.io/images/meta-tags.png"
+          content="https://photosnap-eosin.vercel.app/assets/images/meta-banner.svg"
         />
 
         {/* Meta Tags Generated with https://metatags.io */}
