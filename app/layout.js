@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://metatags.io/images/meta-tags.png"
+          content="https://photosnap-eosin.vercel.app/assets/images/meta-banner.svg"
         />
 
         {/* Twitter */}
